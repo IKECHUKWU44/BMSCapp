@@ -2,7 +2,7 @@ const { RtcTokenBuilder, RtcRole } = require('agora-access-token');
 
 export default function handler(req, res) {
   const { channel, uid } = req.query;
-  const appID = process.env.AGORA_APP_ID;
+  const appID = process.env.NEXT_PUBLIC_AGORA_APP_ID;
   const appCertificate = process.env.AGORA_APP_CERTIFICATE;
   const role = RtcRole.PUBLISHER;
   const expireTime = 3600;
