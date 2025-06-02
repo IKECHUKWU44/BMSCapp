@@ -7,7 +7,7 @@ export default function handler(req, res) {
     return res.status(400).json({ error: "channel and uid are required" });
   }
 
-  const appID = process.env.AGORA_APP_ID;
+  const appID = process.env.NEXT_PUBLIC_AGORA_APP_ID;
   const appCertificate = process.env.AGORA_APP_CERTIFICATE;
 
   if (!appID || !appCertificate) {
